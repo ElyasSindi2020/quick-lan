@@ -36,8 +36,7 @@ public class ExampleClientMixin {
 		server.setUsesAuthentication(false);
 
 		// Safe to publish now that the client handshake is fully complete
-		boolean published = server.publishServer(GameType.SURVIVAL, false, 0);
-
+		boolean published = server.publishServer(GameType.SURVIVAL, false, 25565);
 		if (published) {
 			java.lang.System.out.println("[Quick-LAN] World successfully opened to LAN in offline mode!");
 		} else {
