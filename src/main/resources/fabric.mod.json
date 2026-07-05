@@ -3,15 +3,15 @@
 	"id": "quick-lan",
 	"version": "${version}",
 	"name": "Quick-LAN",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Auto opens a singleplayer world to LAN on port 25565 uppon joining",
 	"authors": [
-		"Me!"
+		"Elyas"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/quick-lan",
+		"sources": "https://github.com/ElyasSindi2020/quick-lan"
 	},
-	"license": "CC0-1.0",
+	"license": "GPL-3.0",
 	"icon": "assets/quick-lan/icon.png",
 	"environment": "*",
 	"entrypoints": {

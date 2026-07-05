@@ -3,7 +3,9 @@
 	"package": "com.elyas.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
-		"ExampleClientMixin"
+		"ExampleClientMixin",
+		"ServerLoginPacketListenerImplMixin",
+		"IntegratedServerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -35,8 +35,11 @@ public class ExampleClientMixin {
 		// Disable online mode for incoming LAN players
 		server.setUsesAuthentication(false);
 
+		// Match the default gamemode for new joiners to whatever the host is currently in
+		GameType hostGameType = Minecraft.getInstance().gameMode.getPlayerMode();
+
 		// Safe to publish now that the client handshake is fully complete
-		boolean published = server.publishServer(GameType.SURVIVAL, false, 25565);
+		boolean published = server.publishServer(hostGameType, false, 25565);
 		if (published) {
 			java.lang.System.out.println("[Quick-LAN] World successfully opened to LAN in offline mode!");
 		} else {
